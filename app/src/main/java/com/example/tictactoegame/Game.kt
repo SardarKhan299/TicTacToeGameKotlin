@@ -3,6 +3,7 @@ package com.example.tictactoegame
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.example.tictactoegame.linkedlist.LinkedList
+import com.example.tictactoegame.queue.ArrayListQueue
 import kotlin.system.exitProcess
 
 
@@ -226,11 +227,21 @@ fun main(){
 //    linkedList.push(2)
 //    linkedList.push(1)
 
-    linkedList.append(1)
-    linkedList.append(2)
-    linkedList.append(3)
-    linkedList.append(4)
-    print(linkedList)
+//    linkedList.append(1)
+//    linkedList.append(2)
+//    linkedList.append(3)
+//    linkedList.append(4)
+    val queue = ArrayListQueue<String>().apply {
+        enqueue("Sardar")
+        enqueue("Ahmed")
+        enqueue("Fatimah")
+        enqueue("Khan")
+    }
+    println(queue)
+    queue.dequeue()
+    println(queue)
+    println("Next element is ${queue.peek()}")
+    //print(linkedList)
 
     //TODO()
 //    val box = Box<Int>()
