@@ -209,6 +209,54 @@ class Game {
 @ExperimentalStdlibApi
 @RequiresApi(Build.VERSION_CODES.N)
 fun main(){
-    val game = Game()
-    game.start()
+
+
+//    val node1 = Node(1)
+//    val node2 = Node(2)
+//    val node3 = Node(3)
+//    val node4 = Node(4)
+//
+//    node1.next = node2
+//    node2.next = node3
+//    node3.next = node4
+//
+//    println(node1)
+
+    val linkedList = LinkedList<Int>()
+//    linkedList.push(4)
+//    linkedList.push(3)
+//    linkedList.push(2)
+//    linkedList.push(1)
+
+    linkedList.append(1)
+    linkedList.append(2)
+    linkedList.append(3)
+    linkedList.append(4)
+    print(linkedList)
+
+    //TODO()
+//    val box = Box<Int>()
+//    box.putContent(4)
+//    println(box.isEmpty())
+//    // immutable list
+//    val fruits = listOf("Apple","Banana","Orange")
+//    // mutable list
+//    val vegetables = arrayListOf("Carrot","Gabage")
+//    val animals = mutableListOf("Cat","Dog")
+//    animals.add("Elephant")
+//    println(fruits[0])
+//    vegetables.add("Onion")
+//    println(vegetables[2])
+//    println(animals[2])
+//
+//    // map example
+//    val scores = mutableMapOf("sardar" to 3 , "ahmed" to 4 , "umer" to 5)
+//    scores["irfan"] = 9
+//    println(scores)
+
+//    val game = Game()
+//    game.start()
 }
+
+public inline  fun TODO():Nothing  = throw NotImplementedError()
+
