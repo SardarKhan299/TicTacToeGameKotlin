@@ -1,8 +1,8 @@
-package com.example.tictactoegame
+package com.example.tictactoegame.linkedlist
 
 class LinkedList<T> {
-    private var head:Node<T>? = null
-    private var tail:Node<T>? = null
+    private var head: Node<T>? = null
+    private var tail: Node<T>? = null
     private var size = 0
 
     private fun isEmpty():Boolean{
@@ -38,7 +38,7 @@ class LinkedList<T> {
 
     }
 
-    fun nodeAt(index:Int):Node<T>?{
+    fun nodeAt(index:Int): Node<T>?{
         var currentNode = head
         var currentIndex = 0
         while (currentNode!=null && currentIndex<index){
@@ -48,7 +48,7 @@ class LinkedList<T> {
         return currentNode
     }
 
-    fun insertNode(value:T,afterNode: Node<T>):Node<T>{
+    fun insertNode(value:T,afterNode: Node<T>): Node<T> {
 
         if(tail == afterNode){
             append(value)

@@ -1,10 +1,8 @@
 package com.example.tictactoegame
 
 import android.os.Build
-import android.util.Log
 import androidx.annotation.RequiresApi
-import androidx.constraintlayout.helper.widget.MotionPlaceholder
-import kotlin.math.ceil
+import com.example.tictactoegame.linkedlist.LinkedList
 import kotlin.system.exitProcess
 
 

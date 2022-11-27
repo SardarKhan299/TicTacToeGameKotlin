@@ -1,8 +1,6 @@
-package com.example.tictactoegame
+package com.example.tictactoegame.linkedlist
 
-import android.util.Log
-
-data class Node<T>(val value:T, var next:Node<T>? = null) {
+data class Node<T>(val value:T, var next: Node<T>? = null) {
     init {
 
     }
